@@ -1,8 +1,9 @@
 <?php
 $c = curl_init();
 
-$login = '03612008dbfab81c';
-$key = '7-JA94Jt';
+$login = '';
+$key = '';
+
 $file = $_GET["fileid"];
 
 curl_setopt($c, CURLOPT_URL, "https://api.openload.io/1/file/dlticket?file={$file}&login={$login}&key={$key}");
