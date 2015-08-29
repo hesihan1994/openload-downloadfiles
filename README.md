@@ -8,7 +8,9 @@ enterkeyusername with your API/FTP Username
 enterkeyhereenterkeyhereAPI/FTP Key 
 
 For example 
+
 $login = 'enterkeyusername';
+
 $key = 'enterkeyhere';
 
 
