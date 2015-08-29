@@ -1,5 +1,4 @@
 <?php
-
 $c = curl_init();
 
 $login = '03612008dbfab81c';
@@ -15,7 +14,6 @@ $output = get_object_vars($response);
 
 
 $result = get_object_vars($output['result']);
-
 $ticket = $result['ticket'];
 $captcha = $result['captcha_url'];
 
@@ -37,16 +35,14 @@ header("Location:  $downloadLink");
 // If no File name is provided then this form is used
 if (empty($file)) {
 echo '
-	<html>
-		<body>
-		
-			<form action="' . $pageName . '" method="get">
-			Enter the File ID: <input type="text" name="fileid"><br>
-			<input type="submit">
-			</form>
-		
-		</body>
-	</html>
+<html>
+	<body>
+		<form action="' . $pageName . '" method="get">
+		Enter the File ID: <input type="text" name="fileid"><br>
+		<input type="submit">
+		</form>
+	</body>
+</html>
 ';
 }
 ?>
